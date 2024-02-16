@@ -1,7 +1,3 @@
-
-ILLEGAL_PARAGRAPHS = ["&lt;![CDATA[----------------- ]]&gt;",
-                      "&lt;![CDATA[---------------- ]]&gt;"]
-
 TRASH_PATTERNS = [r"\(\(\d+\)\)",
                   r"\(\d+\)",
                   r"\(\d+[a-z]\)",
@@ -15,5 +11,7 @@ TRASH_CHARS = [["a'","à"],
                ["u'","ù"],
                ["  "," "],
                [" \n", ""]]
+
+USELESS_BRACKETS = ["((", "))"]
 
 INTRO_PATTERN = r"(Art\.\s+)([0-9]+)"
