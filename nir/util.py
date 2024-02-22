@@ -27,8 +27,10 @@ class NIRUtils:
                 mainBody = doc.find(TreeView.NODE_D)
 
                 for p in mainBody[0].find(TreeView.NODE_E):
+                    p_content = ""
                     for inner in p.itertext():
-                        raw_content.append(inner)
+                        p_content += inner
+                    raw_content.append(p_content)
 
         return raw_content
 
@@ -38,11 +40,11 @@ class NIRUtils:
         content = []
 
         for c in raw_content:
-            splitted = c.split(" \n \n")
+            splitted = c.split("\n")
             content = content + splitted
 
         content = [NIRUtils.clean_paragraph(con) for con in content]
-        content = [c for c in content if c is not None]
+        content = [c for c in content if c is not None if c != '']
 
         return content
 

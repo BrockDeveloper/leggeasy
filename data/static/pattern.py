@@ -12,6 +12,6 @@ TRASH_CHARS = [["a'","à"],
                ["  "," "],
                [" \n", ""]]
 
-USELESS_BRACKETS = ["((", "))"]
+USELESS_BRACKETS = ["((", "))", "...", ". . ."]
 
 INTRO_PATTERN = r"(Art\.\s+)([0-9]+)"

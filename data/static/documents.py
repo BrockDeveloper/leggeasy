@@ -8,6 +8,11 @@ DOCUMENTS = {
     "CP": {
         "filepath": "assets/cp.xml",
         "article": "Codice Penale-art. "
+    },
+
+    "CPC": {
+        "filepath": "assets/cpc.xml",
+        "article": "CODICE DI PROCEDURA CIVILE-art. "
     }
     
 }
