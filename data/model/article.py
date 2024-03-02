@@ -14,6 +14,9 @@ class Article():
         id = raw_content[0].replace("Art. ", "").replace(".", "")
         desc = raw_content[1].replace("(", "").replace(").", "").replace(")", "")
 
+        if not raw_content[-1].endswith("."):
+            raw_content[-1] = raw_content[-1] + "."
+
         return Article(
             id,
             desc,
@@ -27,6 +30,6 @@ class Article():
         string += self.desc + "\n\r\n\r"
 
         for paragraph in self.paragraphs:
-            string += paragraph + "\n\r"
+            string += paragraph + "\n\r\n\r"
 
         return string

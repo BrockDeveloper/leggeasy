@@ -6,4 +6,3 @@ class TreeView:
     NODE_C = PREFIX + "doc"
     NODE_D = PREFIX + "mainBody"
     NODE_E = PREFIX + "content"
-    ATTR_A = "name"

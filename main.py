@@ -1,6 +1,7 @@
 from nir.parser import NIRParser
 from data.model.documentType import DocumentType
+from data.model.document import Document
 
+parsed: Document = NIRParser.parse(DocumentType.CODICE_PENALE)
 
-parsed = NIRParser.parse(DocumentType.CODICE_PROCEDURA_PENALE, "100")
-print(parsed)
+print(parsed.get_article_list())

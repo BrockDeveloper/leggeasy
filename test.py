@@ -17,7 +17,9 @@ for chapter in chapters:
 
         # print(article.attrib["eId"])
 
-        if article.attrib["eId"] == "art_12":
+        if article.attrib["eId"] == "art_745":
+
+            # ATTENTO IL 745 è UN ALTRO MODO ANCORA DI FARE LE COSE
 
             paragraphs = article.findall(PREFIX + "paragraph")
             
