@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     documento.addEventListener("change", function() {
 
-        fetch("http://localhost:8080/"+documento.value)
+        fetch("https://leggeasy.vercel.app/"+documento.value)
               .then((response) => response.json())
               .then((json) => load_articles(json));
     })
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     articolo.addEventListener("change", function() {
 
-        fetch("http://localhost:8080/"+documento.value+"/"+articolo.value)
+        fetch("https://leggeasy.vercel.app/"+documento.value+"/"+articolo.value)
               .then((response) => response.json())
               .then((json) => load_article(json));
     })
