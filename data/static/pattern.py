@@ -1,7 +1,9 @@
+
 TRASH_PATTERNS = [r"\(\(\d+\)\)",
                   r"\(\d+\)",
                   r"\(\d+[a-z]\)",
                   r"\(\)"]
+
 
 TRASH_CHARS = [["a'","à"],
                ["e'","è"],
@@ -12,6 +14,8 @@ TRASH_CHARS = [["a'","à"],
                ["  "," "],
                [" \n", ""]]
 
+
 USELESS_BRACKETS = ["((", "))", "...", ". . ."]
+
 
 INTRO_PATTERN = r"(Art\.\s+)([0-9]+)"

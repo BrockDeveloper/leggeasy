@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    <title>Leggeasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+
+        <h1>Leggeasy - Alpha test release</h1>
+        <p>Sito in sviluppo</p>
+        <br><br>
+
+        <!-- Form di selezione del codice e dell'articolo-->
+        <form>
+
+            <!-- Selettore del tipo di codice-->
+            <select name="documento" required id="documento" autocomplete="off">
+                <option selected disabled hidden value="">
+                  Seleziona un documento per iniziare
+                </option>
+                <option value="cc">Codice Civile</option>
+                <option value="cpc">Codice di Procedura Civile</option>
+                <option value="cp">Codice Penale</option>
+            </select>
+
+            <select name="articolo" required disabled id="articolo">
+                <!-- Articolo popolato da codice js-->
+            </select>
+
+        </form>
+
+        <br>
+
+       <div id="testo"></div>
+       
+    </main>
+
+    <script src="articles.js"></script>
+</body>
+</html>
