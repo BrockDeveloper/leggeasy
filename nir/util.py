@@ -20,7 +20,7 @@ class NIRUtils:
         return content
 
 
-    def clean_paragraph(paragraph: str) -> str | None:
+    def clean_paragraph(paragraph: str) -> str:
 
         for char in TRASH_CHARS:
             paragraph = paragraph.replace(char[0], char[1])
