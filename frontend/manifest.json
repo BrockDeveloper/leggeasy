@@ -6,7 +6,7 @@
     "display": "fullscreen",
     "orientation": "any",
     "scope": "/",
-    "start_url": "localhost:5500/index.html",
+    "start_url": "https://brockdev.it/leggeasy/frontend/index.html",
     "icons": [
         {
             "src": "assets/logo.jpg",
