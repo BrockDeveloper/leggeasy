@@ -20,7 +20,7 @@
         <form>
 
             <!-- Selettore del tipo di codice-->
-            <select name="documento" required id="documento" autocomplete="off">
+            <select name="documento" required id="documento" autocomplete="on">
                 <option selected disabled hidden value="">
                   Seleziona un documento per iniziare
                 </option>
@@ -29,9 +29,10 @@
                 <option value="cp">Codice Penale</option>
             </select>
 
-            <select name="articolo" required disabled id="articolo">
-                <!-- Articolo popolato da codice js-->
-            </select>
+            <input list="articolo" name="selectArticoli" id="selectArticoli"/>
+            <datalist id="articolo"></datalist>
+
+            <input type="button" value="Ricerca" id="ricercaArticolo">
 
         </form>
 

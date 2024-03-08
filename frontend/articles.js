@@ -1,5 +1,7 @@
 var documento = document.getElementById("documento");
 var articolo = document.getElementById("articolo");
+var articoloSelezionato = document.getElementById("selectArticoli")
+var ricercaArticolo = document.getElementById("ricercaArticolo")
 var testo = document.getElementById("testo");
 
 
@@ -33,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
 
-    articolo.addEventListener("change", function() {
+    ricercaArticolo.addEventListener("click", function() {
 
-        fetch("https://leggeasy.vercel.app/"+documento.value+"/"+articolo.value)
+        fetch("https://leggeasy.vercel.app/"+documento.value+"/"+ articoloSelezionato.value)
               .then((response) => response.json())
               .then((json) => load_article(json));
     })
