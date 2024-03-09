@@ -12,7 +12,7 @@ function load_articles(response) {
     response = "<option selected disabled hidden >Seleziona un articolo</option>" + response
 
     articolo.insertAdjacentHTML("beforeend", response)
-    articolo.disabled = false
+    selectArticoli.disabled = false
 }
 
 function load_article(response) {

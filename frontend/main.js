@@ -10,7 +10,7 @@ if ("serviceWorker" in navigator) {
   
   const cacheName = "leggeasy"; //the name of our cache
   const cacheAsset = ["index.html", "style.css", "main.js"]; //this is the asset that we want to cache
-  
+
   self.addEventListener("install", (e) => {
     console.log("service worker installed");
   

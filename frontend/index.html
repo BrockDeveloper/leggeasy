@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
     <title>Leggeasy</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+/>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json" />
 
@@ -24,9 +28,16 @@
     <main class="container">
 
 
-        <h1>Leggeasy - Alpha test release</h1>
-        <p>Sito in sviluppo</p>
-        <br><br>
+        <nav class="navbar">
+            <ul class="logo">
+                <li class="img-logo"><img src="assets/logo.jpg" width="70", height="70"></li>
+                <li class="title-logo">Legg<tag class="accent">easy</tag></li>
+            </ul>
+        </nav>
+
+        
+
+        <br><br><br><br><br>
 
         <!-- Form di selezione del codice e dell'articolo-->
         <form>
@@ -34,17 +45,17 @@
             <!-- Selettore del tipo di codice-->
             <select name="documento" required id="documento" autocomplete="on">
                 <option selected disabled hidden value="">
-                  Seleziona un documento per iniziare
+                  Seleziona un codice
                 </option>
                 <option value="cc">Codice Civile</option>
                 <option value="cpc">Codice di Procedura Civile</option>
                 <option value="cp">Codice Penale</option>
             </select>
 
-            <input list="articolo" name="selectArticoli" id="selectArticoli"/>
+            <input disabled list="articolo" name="selectArticoli" id="selectArticoli" placeholder="Seleziona l'articolo"/>
             <datalist id="articolo"></datalist>
 
-            <input type="button" value="Ricerca" id="ricercaArticolo">
+            <input type="button"  class="pico-background-blue-700" value="Visualizza l'articolo" id="ricercaArticolo">
 
         </form>
 
